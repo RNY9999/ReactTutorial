@@ -1,16 +1,11 @@
-import HomeIcon from '@mui/icons-material/Home';
 import './App.css';
-import logo from './logo.svg';
+import Header from './components/base/Header';
 
 function App() {
   return (
-    <div className="App">
-      <img src={logo} className="App-logo" alt="logo" />
-      <HomeIcon />
-      <h1>
-        2024/4/8テストs
-      </h1>
-    </div>
+    <>
+      <Header />
+    </>
   );
 }
 
