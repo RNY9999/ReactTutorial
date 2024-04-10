@@ -8,9 +8,9 @@ function App() {
   const [user] = useAuthState(auth);//true || false
 
   return (
-    <div className="App">
+    <>
       {user ? <Line /> : <SignIn/>}
-    </div>
+    </>
   );
 }
 

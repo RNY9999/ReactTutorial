@@ -2,6 +2,7 @@
 
 /package.json
 /package-lock.json
+/src/apiKey.js
 
 # dependencies
 /node_modules

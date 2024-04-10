@@ -2,12 +2,14 @@
 import firebase from "firebase/compat/app";
 import "firebase/compat/auth";
 import "firebase/compat/firestore";
+import "./apiKey";
+import { apiKeys } from "./apiKey";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCha1jxwTgJ9e51jYHKlkPr0T8qGISY0zo",
+  apiKey: apiKeys.firebase,
   authDomain: "app-ecd5c.firebaseapp.com",
   projectId: "app-ecd5c",
   storageBucket: "app-ecd5c.appspot.com",
