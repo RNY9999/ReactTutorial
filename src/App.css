@@ -1,0 +1,22 @@
+:root {
+  --dm-1: #272727;
+  --dm-2: #343434;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dm-1);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}

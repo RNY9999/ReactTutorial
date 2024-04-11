@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { db, auth } from "../firebase.js";
 import firebase from "firebase/compat/app";
 
+// import SendIcon from '@mui/icons-material/Send';
+
 const SendMessage = () => {
     const [message, setMessage] = useState();
     const sendMessage = (e) => {
@@ -19,10 +21,11 @@ const SendMessage = () => {
         setMessage("");
     }
   return (
-    <form onSubmit={sendMessage}>
-        <div className="sendMessage">
+    <form className='send-form' onSubmit={sendMessage}>
             <input type="text" value={message} placeholder='メッセージを入力してください' onChange={(e) => setMessage(e.target.value)}/>
-        </div>
+            {/* <button type='submit' onChange={(e) => setMessage(e.target.value)}>
+                <SendIcon/>
+            </button> */}
     </form>
   )
 }

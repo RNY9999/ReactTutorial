@@ -1,0 +1,25 @@
+@import url(./root.css);
+
+.chat-header {
+    width: 100%;
+    height: 56px;
+    border-bottom: 1px solid var(--dm-6);
+    display: flex;
+    align-items: center;
+    color: var(--dm-6);
+    /* position: absolute;
+    top: 0; */
+    background-color: var(--dm-2);
+}
+
+.chat-header__button {
+    appearance: none;
+    color: var(--dm-6);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.chat-header__button:hover {
+    cursor: pointer;
+    color: white;
+}

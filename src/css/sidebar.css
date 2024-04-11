@@ -1,0 +1,7 @@
+@import url("./root.css");
+
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background-color: var(--dm-2);
+}
