@@ -21,15 +21,22 @@ const Line = () => {
             {console.log(messages)}
             <SignOut />
             <div className='messages'>
-                {messages.map(({id, text, photoURL, uid}) => {
-                    return (
-                        <div key={id}>
-                            <img className='user-icon' src={photoURL} alt="" />
-                            {/* <div>{uid}</div> */}
-                            <p>{text}</p>
-                        </div>
-                    );
-                })}
+                <div className='messages__scrollArea'>
+                    {messages.map(({id, text, photoURL, createdAt, uid}) => {
+                        return (
+                            <div className='message' key={id}>
+                                <img className='message__icon' src={photoURL} alt="" />
+                                <div className="message__texts chat">
+                                    <div className='chat__header'>
+                                        <h2 className='chat__userName'>久松蓮弥</h2>
+                                        <p className='chat__timeStamp'>14:19</p>
+                                    </div>
+                                    <p className='chat__text'>{text}</p>
+                                </div>
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
             <SendMessage />
         </div>

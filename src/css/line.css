@@ -3,6 +3,7 @@
 .main-area {
     flex-grow: 1;
     padding: 24px;
+    height: 100vh;
 }
 
 .main-content {
@@ -19,4 +20,73 @@
 .messages {
     width: 100%;
     flex-grow: 1;
+    overflow-y: scroll;
+}
+
+.messages::-webkit-scrollbar {
+    appearance: none;
+    width: 4px;
+    /* border-radius: 50%; */
+}
+
+.messages::-webkit-scrollbar-thumb {
+    background-color: var(--dm-6);
+    border-radius: 4px;
+}
+
+.messages__scrollArea {
+    height: 100%;
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    padding: 8px;
+    background-color: var(--dm-2);
+    /* background-color: white; */
+}
+
+.message:hover {
+    background-color: var(--dm-3);
+}
+
+.message__icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.message__text {
+    flex-grow: 1;
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+}
+
+.chat__header {
+    display: flex;
+    gap: 4px;
+    align-items: end;
+}
+
+.chat__userName {
+    color: var(--fn-1);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .3vh;
+}
+
+.chat__timeStamp {
+    color: var(--fn-3);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.chat__text {
+    color: var(--fn-3);
+    font-size: 14px;
+    
 }
